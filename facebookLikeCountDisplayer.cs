@@ -28,7 +28,7 @@ namespace ConsoleApp2
                     nameArray.Add(facebookName); //When user enters a name, that name is added to an array list.
                     count++; //A counter I created adds up the number of names the user enters as they enter them.
                 }
-            } while (true); //Since there is a break condition above, the while condition is j
+            } while (true); //Since there is a break condition above, the while condition is just a boolean with the value 'true'.
 
             if (nameArray.Count == 1) {//Depending on how many names the user enters, a message will pop up.
                 Console.WriteLine("{0} likes this", nameArray[0]); //With just one or to names, those names will be displayed.
