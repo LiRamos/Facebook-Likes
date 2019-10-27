@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Collections;
 
 namespace ConsoleApp2
 
 {
-    class faceBookLikeCounterDisplayer
+    public class faceBookLikeCounterDisplayer
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             Console.WriteLine("Hello! I will post a Like message similar to the ones on Facebook posts. Please enter the names of the people one at a time, pressing Enter between each friend's name.");
             string facebookName;
@@ -18,7 +14,7 @@ namespace ConsoleApp2
             int count = 0;
             do
             {
-                Console.WriteLine("Please give me a name, when you've typed all names you want to use,  press the  Enter button.");
+                Console.WriteLine("Please give me a name, if you've typed all names you want to use,  press the  Enter button twice.");
                 facebookName = Console.ReadLine(); //User enters names one at a time and they are stored in the facebookName variable.
                 if (facebookName == "")
                 {
@@ -40,7 +36,7 @@ namespace ConsoleApp2
             if (nameArray.Count >= 3) //With three or more names, names after the last two will have the number counted by the count variable, and 
                                       //The first two names will be displayed, then the remaining names will just be represented by the number of those names.
             {
-                Console.WriteLine("{0} ,{1} and {2} others  like this", nameArray[0], nameArray[1], (count - 2));
+                Console.WriteLine("{0} ,{1}, and {2} others  like this", nameArray[0], nameArray[1], (count - 2));
             } 
 
 
